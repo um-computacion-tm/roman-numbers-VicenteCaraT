@@ -1,30 +1,27 @@
-
 import unittest
 
 
 '''Letras en los numeros romano I, V, X, L, C, D, M'''
-
-
     
 
 
 def decimal_to_roman (entero):
 
-    lts_m = ['','M'] #generar lista mill
-    lts_c = ['','C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM'] #generar lista centena
-    lts_d = ['','X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'] #generar lista decimos
-    lts_u = ['','I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'] #generar lista unidades
+    lst_m = ['', 'M']
+    lst_c = ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM']
+    lst_d = ['', 'X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXX', 'XC']
+    lst_u = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
 
-    milli = lts_m [entero // 1000] 
-    centena = lts_c [(entero % 1000) // 100] 
-    decena = lts_d [(entero % 100) // 10]
-    unidad = lts_u [entero % 10]
+    milli = lst_m (entero//1000)
+    centena = lst_c ((entero % 100)//100)
+    decena = lst_d ((entero % 10)//10)
+    unidad = lst_u (entero % 10)
 
-    resultado = (milli + centena + decena + unidad)
+    result = (milli + centena + decena + unidad)
 
     
 
-    return resultado
+    return result
 
 
 class TestDecimalToRoman(unittest.TestCase):
@@ -87,7 +84,7 @@ class TestDecimalToRoman(unittest.TestCase):
 
         resultado = decimal_to_roman(123)
 
-        self.assertEqual (resultado, 'CXXIII')
+        self.assertEqual (resultado, 'CXIII')
     
     def test_docientosveinte(self):
         
