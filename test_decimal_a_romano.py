@@ -26,14 +26,13 @@ def decimal_to_roman (entero):
 
     return resultado
 
-
 class TestDecimalToRoman(unittest.TestCase):
 
     def test_uno(self):
 
         resultado= decimal_to_roman (1)
 
-        self.assertEqual (resultado, "I")
+        self.assertEqual (resultado, 'I')
 
     def test_dos(self):
 
