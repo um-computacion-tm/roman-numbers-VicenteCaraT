@@ -5,4 +5,4 @@ def decimal2roman (number):
 
 
 if __name__ == '__main__':
-    input()
+    print(decimal2roman(1))

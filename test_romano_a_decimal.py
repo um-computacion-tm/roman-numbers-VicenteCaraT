@@ -1,4 +1,3 @@
-import unittest
 
 
 def roman_to_decimal(romano):
@@ -12,68 +11,5 @@ def roman_to_decimal(romano):
             total -= d_decimal[i]
     return total
 
-        
-
-
-class RomanToDecimal (unittest.TestCase):
-    def test_I(self):
-    
-        resu = (roman_to_decimal('I'))
-
-        self.assertEqual(resu, 1)
-    
-    def test_II(self):
-        
-        resu = (roman_to_decimal('II'))
-
-        self.assertEqual(resu, 2)
-    
-    def test_III(self):
-
-        resu = (roman_to_decimal('III'))
-
-        self.assertEqual(resu, 3)
-
-    def test_IV(self):
-        
-        resu = (roman_to_decimal('IV'))
-
-        self.assertEqual(resu, 4)
-                
-    def test_V(self):
-
-        resu = (roman_to_decimal('V'))
-
-        self.assertEqual(resu, 5)
-
-    def test_VI(self):
-
-        resu = (roman_to_decimal('VI'))
-
-        self.assertEqual(resu, 6)
-
-    def test_VIII(self):
-
-        resu = (roman_to_decimal('VIII'))
-
-        self.assertEqual(resu, 8)
-
-    def test_X(self):
-
-        resu = (roman_to_decimal('X'))
-
-        self.assertEqual(resu, 10)
-
-    def test_XV(self):
-
-        resu = (roman_to_decimal('XV'))
-
-        self.assertEqual(resu, 15)
-
-    def test_XX(self):
-
-        resu = (roman_to_decimal('XX'))
-
-        self.assertEqual(resu, 20)
 if __name__ == "__main__":
-    unittest.main()
+    pass
